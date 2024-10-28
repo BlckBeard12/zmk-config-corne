@@ -85,15 +85,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5             &mmv MOVE_UP     &kp N7   &kp N8   &kp N9  &kp N0      &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3       &mmv MOVE_DOWN   &kp N4   &kp N5   &kp N6  &kp SLASH   &kp HOME  &kp PLUS
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF    &mmv MOVE_LEFT   &kp N1   &kp N2   &kp N3  &kp PERIOD  &kp END   &kp MINUS
-                         &kp C_MUTE      &trans        &trans        &trans             &mmv MOVE_RIGHT  &kp INS  &kp DEL  &trans
-                                                                                        &mkp LCLK
+&kp ESC         &kp F1   &kp F2      &kp F3        &kp F4  &kp F5       &mmv MOVE_UP     &kp N7     &kp N8  &kp N9             &kp N0      &kp PLUS   &kp BSPC
+&kp TAB         &kp F6   &kp F7      &kp F8        &kp F9  &kp F10      &mmv MOVE_DOWN   &kp N4     &kp N5  &kp N6             &kp SLASH   &kp MINUS  &trans
+&kp LEFT_SHIFT  &kp F11  &kp F12     &trans        &trans  &trans       &mmv MOVE_LEFT   &kp N1     &kp N2  &kp N3             &kp PERIOD  &kp HASH   &kp RIGHT_ALT
+                         &kp C_MUTE  &kp LEFT_WIN  &to 0   &kp SPACE    &mmv MOVE_RIGHT  &kp ENTER  &to 2   &kp RIGHT_CONTROL
+                                                                        &mkp LCLK
             >;
 
             label = "NUMBER";
-            sensor-bindings = <&scroll_encoder>;
         };
 
         raise_layer {

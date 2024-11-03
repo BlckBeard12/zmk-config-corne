@@ -64,11 +64,11 @@
             //                                                      enter
 
             bindings = <
-&kp ESC         &kp Q  &kp W       &kp E         &kp R   &kp T        &kp UP_ARROW     &kp Y      &kp U   &kp I              &kp O    &kp P     &kp BSPC
-&kp TAB         &kp A  &kp S       &kp D         &kp F   &kp G        &kp DOWN_ARROW   &kp H      &kp J   &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X       &kp C         &kp V   &kp B        &kp LEFT_ARROW   &kp N      &kp M   &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_ALT
-                       &kp K_MUTE  &kp LEFT_WIN  &trans  &kp SPACE    &kp RIGHT_ARROW  &kp ENTER  &tog 1  &kp RIGHT_CONTROL
-                                                                      &kp ENTER
+&kp ESC         &kp Q  &kp W       &kp E         &kp R  &kp T        &kp UP_ARROW     &kp Y      &kp U   &kp I              &kp O    &kp P     &kp BSPC
+&kp TAB         &kp A  &kp S       &kp D         &kp F  &kp G        &kp DOWN_ARROW   &kp H      &kp J   &kp K              &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X       &kp C         &kp V  &kp B        &kp LEFT_ARROW   &kp N      &kp M   &kp COMMA          &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                       &kp K_MUTE  &kp LEFT_WIN  &mo 4  &kp SPACE    &kp RIGHT_ARROW  &kp ENTER  &tog 1  &kp RIGHT_CONTROL
+                                                                     &kp ENTER
             >;
 
             label = "QWERTY";
@@ -85,10 +85,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE    &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT      &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK          &kp LPAR  &kp RPAR  &kp DEL
-&kp TAB       &trans    &trans          &kp UP_ARROW    &kp K_COPY       &kp K_PASTE    &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT           &kp RBKT  &kp BSLH  &kp GRAVE
-&kp CAPSLOCK  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans         &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC           &kp RBRC  &kp PIPE  &kp RIGHT_ALT
-                        &kp K_MUTE      &kp LEFT_WIN    &to 0            &kp SPACE      &mmv MOVE_RIGHT  &kp RET    &tog 2     &kp RIGHT_CONTROL
+&kp ESCAPE      &kp EXCL  &kp AT          &kp HASH        &kp DLLR         &kp PRCNT    &mmv MOVE_UP     &kp CARET  &kp AMPS   &kp ASTRK          &kp LPAR  &kp RPAR  &kp BACKSPACE
+&kp TAB         &trans    &trans          &kp UP_ARROW    &trans           &trans       &mmv MOVE_DOWN   &kp MINUS  &kp EQUAL  &kp LBKT           &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LEFT_SHIFT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &mmv MOVE_LEFT   &kp UNDER  &kp PLUS   &kp LBRC           &kp RBRC  &kp PIPE  &kp RIGHT_ALT
+                          &kp K_MUTE      &kp LEFT_WIN    &to 0            &kp SPACE    &mmv MOVE_RIGHT  &kp RET    &tog 2     &kp RIGHT_CONTROL
                                                                                         &mkp LCLK
             >;
 
@@ -124,6 +124,16 @@
 &trans          &trans           &trans           &trans           &trans           &trans             &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                  &trans           &trans           &to 2            &trans             &trans  &trans  &trans  &trans
                                                                                                        &trans
+            >;
+        };
+
+        Temp {
+            bindings = <
+&trans        &trans  &trans  &trans      &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &kp DELETE
+&trans        &trans  &trans  &trans      &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &trans  &trans  &kp K_COPY  &kp K_PASTE  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                      &trans  &trans      &trans       &trans    &trans  &trans  &trans  &trans
+                                                                 &trans
             >;
         };
     };
